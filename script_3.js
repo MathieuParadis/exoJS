@@ -6,10 +6,10 @@ pyramide(nb_floor)
 
 function pyramide(number_of_floor) {
   for(let floor = 1; floor <=number_of_floor; floor++){
-    blank = " ".repeat(number_of_floor-floor)
-    brick = "#".repeat(floor)
+    blank = " ".repeat(number_of_floor-floor);
+    brick = "#".repeat(floor);
 
-    layer = blank + brick
+    layer = blank + brick;
     console.log(layer);
   }
 }

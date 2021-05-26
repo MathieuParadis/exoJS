@@ -54,12 +54,13 @@ function ConversionARN_AA(sequence_array) {
 
 function decode (string_seq) {
   let keys = convertSequenceInntoArray(string_seq);
-  let values = ConversionARN_AA(convertSequenceInntoArray(string_seq));
-  
-  let result = {};
-  keys.forEach((key, i) => result[key] = values[i]);
-  console.log(result);
+  let values = ConversionARN_AA(keys);
+  let result = values.join("-");
+
+  console.log(result)
+
 }
+
 console.log("Sequence 1");
 decode(seq1)
 
